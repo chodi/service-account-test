@@ -10,6 +10,7 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
+    "googleapis": "^22.2.0",
     "jsonwebtoken": "^8.1.0",
     "morgan": "~1.8.1",
     "njwt": "^0.4.0",

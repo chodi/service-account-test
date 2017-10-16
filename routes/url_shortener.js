@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var google = require('googleapis');
 var fetch = require('node-fetch');
 var jwt = require('jsonwebtoken');
 var SECRET = require('../SECRET');
