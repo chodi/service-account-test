@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to Google oauth using service-account-token
+
+  .container
+  div.wrapper-form.spacing
+    form.form-signin(action='/auth', method='get')
+      div.spacing-top
+        button.btn.btn-lg.btn-primary.btn-block(type='submit') AUTH
+
+  form.form-signin(action='/url_shortener', method='POST')
+    h2.form-signin-heading Enter URL
+    label.sr-only(for='url') URL
+    input#url.form-control(name='url', type='text', placeholder='URL', required='')
+    button.btn.btn-lg.btn-primary.btn-block(type='submit') Submit URL
+  br
+  br
+
+  form.form-signin(action='/google_drive_req', method='POST')
+    h2.form-signin-heading List drive files of Service account
+    button.btn.btn-lg.btn-primary.btn-block(type='submit') GOOGLE_DRIVE_READ
+  br
+  br
+  form.form-signin(action='/kickfunders_users', method='POST')
+    h2.form-signin-heading List Users of @DOMAIN via Service account
+    button.btn.btn-lg.btn-primary.btn-block(type='submit') LIST_KICKFUNDERS_USER
+
+
